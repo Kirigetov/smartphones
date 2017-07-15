@@ -1,0 +1,53 @@
+.hero-slider-wrap
+	position: relative
+	.slider-arrow
+		margin-top: -5px
+	.slider-arrow_left
+		left: 28px
+	.slider-arrow_right
+		right: 44px
+
+.hero-slider
+	&__img
+		display: block
+		height: 330px
+		background-position: 50% 50%
+		background-size: cover
+		background-repeat: no-repeat
+
+.slide-mod
+	.slider-arrow_left
+		left: 15px
+	.slider-arrow_right
+		right: 15px
+
+.slick-dots
+	margin-bottom: -25px
+	li
+		padding-top: 0 4px
+	button 
+		width: 8px
+		height: 8px
+		box-shadow: none
+		border: 1px solid black
+
+.slider-arrow
+	position: absolute
+	top: 50%
+	+s('btn_next')
+	z-index: 1
+	margin-top: -18px
+	cursor: pointer
+	background-color: transparent
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 100%
+		height: 100%
+		padding: 50px
+		transform: translate(-50%, -50%)
+	&_left
+		transform: rotate(180deg)
+	&_right
