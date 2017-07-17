@@ -20,8 +20,8 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		arrows: true,
-		prevArrow: $('.slider-arrow_left'),
-		nextArrow: $('.slider-arrow_right')
+		prevArrow: $('.pr-slider-arrow_left'),
+		nextArrow: $('.pr-slider-arrow_right')
 	});
 
 

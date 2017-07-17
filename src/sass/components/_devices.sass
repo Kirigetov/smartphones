@@ -1,0 +1,38 @@
+@each $s in mob,tab,clock,ears,charge,ears_b,boom,covers
+	.pic-#{$s}
+		display: inline-block
+		vertical-align: bottom 
+		+s(#{$s})
+
+.devices
+	max-width: 700px 
+	margin: 0 auto  
+	padding-top: 60px
+	&__list
+		font-size: 0 
+
+.device
+	display: inline-block
+	vertical-align: top
+	max-width: 175px 
+	width: 100% 
+	margin-bottom: 30px 
+	transition: opacity 0.2s 
+	&__inner
+		display: block
+		text-align: center
+	&__img
+		display: inline-block
+		vertical-align: bottom
+		height: 55px 
+		margin-bottom: 10px 
+		&:after
+			content: "" 
+			display: inline-block
+			height: 100% 
+			vertical-align: bottom
+	&__caption
+		font-size: 16px
+		color: #000 
+	&:hover
+		opacity: 0.6 

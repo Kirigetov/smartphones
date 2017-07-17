@@ -122,6 +122,8 @@ body { margin: 0; padding: 0; font-family: "SamsungOne", AppleGothic, sans-serif
 .sam-categories .category-list li a { position: relative; display: inline-block; width: 206px; padding: 100px 10px 0 10px; font-weight: 800; font-size: 12px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .sam-categories .category-list li img { position: absolute; left: 50%; right: 0; bottom: 32px; display: block; margin-left: -53px; }
 
+.best-sellers.is-white { background-color: #FFF; }
+
 .best-sellers h2 { padding-bottom: 30px; font-weight: bold; }
 
 .samsung-brand-wrap .shop-btn { display: inline-block; width: 135px; height: 44px; line-height: 44px; font-weight: 800; font-size: 14px; color: #fff; text-align: center; border-radius: 50px; background: #0077c8; -webkit-transition: background 0.2s; transition: background 0.2s; }
@@ -246,16 +248,49 @@ body { margin: 0; padding: 0; font-family: "SamsungOne", AppleGothic, sans-serif
 
 .hero-slider__img { display: block; height: 330px; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; }
 
-.slide-mod .slider-arrow_left { left: 15px; }
-.slide-mod .slider-arrow_right { right: 15px; }
+.slide-mod .pr-slider-arrow_left { left: 15px; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+.slide-mod .pr-slider-arrow_right { right: 15px; }
 
 .slick-dots { margin-bottom: -25px; }
 .slick-dots li { padding-top: 0 4px; }
 .slick-dots button { width: 8px; height: 8px; -webkit-box-shadow: none; box-shadow: none; border: 1px solid black; }
 
-.slider-arrow { position: absolute; top: 50%; background-image: url("../img/icons.png"); width: 19px; height: 37px; background-position: -156px -45px; z-index: 1; margin-top: -18px; cursor: pointer; background-color: transparent; }
+.slider-arrow { position: absolute; top: 50%; background-image: url("../img/icons.png"); width: 19px; height: 37px; background-position: -146px -45px; z-index: 1; margin-top: -18px; cursor: pointer; background-color: transparent; }
 .slider-arrow:after { content: ""; position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; padding: 50px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .slider-arrow_left { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.pic-mob { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 22px; height: 41px; background-position: -146px 0px; }
+
+.pic-tab { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 32px; height: 46px; background-position: -78px 0px; }
+
+.pic-clock { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 27px; height: 43px; background-position: -114px -52px; }
+
+.pic-ears { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 36px; height: 43px; background-position: -38px 0px; }
+
+.pic-charge { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 23px; height: 34px; background-position: -84px -57px; }
+
+.pic-ears_b { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 38px; height: 34px; background-position: 0px -99px; }
+
+.pic-boom { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 34px; height: 53px; background-position: 0px 0px; }
+
+.pic-covers { display: inline-block; vertical-align: bottom; background-image: url("../img/icons.png"); width: 28px; height: 48px; background-position: -114px 0px; }
+
+.devices { max-width: 700px; margin: 0 auto; padding-top: 60px; }
+.devices__list { font-size: 0; }
+
+.device { display: inline-block; vertical-align: top; max-width: 175px; width: 100%; margin-bottom: 30px; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+.device__inner { display: block; text-align: center; }
+.device__img { display: inline-block; vertical-align: bottom; height: 55px; margin-bottom: 10px; }
+.device__img:after { content: ""; display: inline-block; height: 100%; vertical-align: bottom; }
+.device__caption { font-size: 16px; color: #000; }
+.device:hover { opacity: 0.6; }
+
+.videos { font-size: 0; margin: 0 auto 30px; }
+.videos__cell { display: inline-block; vertical-align: top; width: 33.3%; padding: 0 20px; }
+.videos__caption { font-size: 15px; color: #000; }
+
+.video-item { position: relative; margin-bottom: 10px; width: 100%; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
